@@ -7,6 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MtYesnopanelComponent implements OnInit {
   @Input() label: string;
+  @Input() font: string;
+  @Input() appearance: string = 'outline';
+
   show: boolean;
   switchtext(): string {
     if (this.show) { return 'Ja'; } else { return 'Nein'; }

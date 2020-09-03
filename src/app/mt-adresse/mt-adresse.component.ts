@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MtAdresseComponent implements OnInit {
   @Input() font: string;
+  @Input() appearance: string = 'outline';
+
   constructor() { }
 
   ngOnInit(): void {
