@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'material-demo';
   font: string = '12px';
   appearance: string = 'outline'; //standard, fill, outline, legacy
-  disabled: boolean;
+  disabled: boolean = false;
   hint: boolean;
 
 

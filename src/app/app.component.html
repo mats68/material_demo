@@ -1,38 +1,58 @@
+<mat-form-field>
+    <mat-label>Font: </mat-label>
+    <input matInput [(ngModel)]='font' appearance="fill">
+</mat-form-field>
+
+<!-- <mat-form-field appearance="fill">
+    <mat-label>Appearance</mat-label>
+    <select required [(ngModel)]='appearance'>
+      <option value="standard">standard</option>
+      <option value="fill">fill</option>
+      <option value="outline">outline</option>
+      <option value="legacy">legacy</option>
+    </select>
+</mat-form-field> -->
+<div></div>
+<mat-checkbox [(ngModel)]="disabled">Disabled</mat-checkbox>
+
+
+
+
 <form class="mat-app-background">
 
     <p class="titel mat-display-1">Technisches Anschlussgesuch (TAG)</p>
     <app-mt-card label="Ort der Installation"> </app-mt-card>
 
     <div class="newrow">
-        <app-mt-input appearance={{appearance}} font={{font}} label="Standort" width="500px"></app-mt-input>
-        <app-mt-input appearance={{appearance}} font={{font}} label="Nr" width="100px" hint="Standort Nr"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Standort" width="500px"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Nr" width="100px" hint="Standort Nr"></app-mt-input>
     </div>
 
 
     <div class="newrow">
-        <app-mt-input appearance={{appearance}} font={{font}} label="PLZ" width="100px"></app-mt-input>
-        <app-mt-input appearance={{appearance}} font={{font}} label="Ort" width="400px"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="PLZ" width="100px"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Ort" width="400px"></app-mt-input>
     </div>
 
     <div class="newrow">
-        <app-mt-input appearance={{appearance}} font={{font}} label="Gemeinde" width="500px"></app-mt-input>
-        <app-mt-input appearance={{appearance}} font={{font}} label="" width="100px" hint="Gemeinde Zusatz"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Gemeinde" width="500px"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="" width="100px" hint="Gemeinde Zusatz"></app-mt-input>
     </div>
 
     <div class="newrow">
         <app-mt-checkbox label="neu"></app-mt-checkbox>
         <app-mt-checkbox label="bestehend"></app-mt-checkbox>
         <app-mt-checkbox label=""></app-mt-checkbox>
-        <app-mt-input appearance={{appearance}} font={{font}} label="" width="200px"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="" width="200px"></app-mt-input>
     </div>
 
 
     <app-mt-card label="Anlage / Gebäudeteil"></app-mt-card>
     <div class="newrow">
-        <app-mt-input appearance={{appearance}} font={{font}} label="Zähler" width="600px"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Zähler" width="600px"></app-mt-input>
     </div>
     <div class="newrow">
-        <app-mt-input appearance={{appearance}} font={{font}} label="Netzanschluss (HAK)" width="200px" suffix="A"></app-mt-input>
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Netzanschluss (HAK)" width="200px" suffix="A"></app-mt-input>
     </div>
     <div class="newrow">
         <app-mt-checkbox label="neu"></app-mt-checkbox>
