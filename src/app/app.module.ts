@@ -15,6 +15,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatRadioModule } from '@angular/material/radio';
+import { MtTitelComponent } from './mt-titel/mt-titel.component';
+import { MtAdresseComponent } from './mt-adresse/mt-adresse.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { MatRadioModule } from '@angular/material/radio';
     MtCardComponent,
     MtCheckboxComponent,
     MtSwitchComponent,
-    MtRadioComponent
+    MtRadioComponent,
+    MtTitelComponent,
+    MtAdresseComponent
   ],
   imports: [
     BrowserModule,
