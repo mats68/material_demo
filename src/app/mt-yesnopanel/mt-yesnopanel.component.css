@@ -7,8 +7,6 @@
     width: 80%;
     background-color: rgb(238, 232, 232);
     border-radius: 5px;
-}
-
-.switch {
-    margin-left: 1800px;
+    display: flex;
+    justify-content: space-between;
 }

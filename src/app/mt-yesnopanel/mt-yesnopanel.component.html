@@ -1,9 +1,11 @@
 <div class="titel">
-    {{label}}
-    <span class="switch">
-      <mat-slide-toggle [(ngModel)]="show">{{switchtext()}}</mat-slide-toggle>
-   </span>
-    <div *ngIf='show'>
-        <app-mt-adresse></app-mt-adresse>
+    <div>
+        {{label}}
     </div>
+    <div>
+        <mat-slide-toggle [(ngModel)]="show">{{switchtext()}}</mat-slide-toggle>
+    </div>
+</div>
+<div *ngIf='show'>
+    <app-mt-adresse></app-mt-adresse>
 </div>

@@ -9,7 +9,8 @@ export class MtInputComponent implements OnInit {
 
   @Input() label: string;
   @Input() width: string;
-
+  @Input() prefix: string;
+  @Input() suffix: string;
 
   constructor() { }
 
