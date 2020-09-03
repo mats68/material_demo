@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'material-demo2';
+  title = 'material-demo';
+  font: string = '12px';
+  appearance: string = 'outline'; //standard, fill, outline, legacy
+  disabled: boolean;
+  hint: boolean;
+
+
 }

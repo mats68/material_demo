@@ -10,15 +10,16 @@ import { MtCardComponent } from './mt-card/mt-card.component';
 import { MtCheckboxComponent } from './mt-checkbox/mt-checkbox.component';
 import { MtSwitchComponent } from './mt-switch/mt-switch.component';
 import { MtRadioComponent } from './mt-radio/mt-radio.component';
+import { MtTitelComponent } from './mt-titel/mt-titel.component';
+import { MtAdresseComponent } from './mt-adresse/mt-adresse.component';
+import { MtYesnopanelComponent } from './mt-yesnopanel/mt-yesnopanel.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatRadioModule } from '@angular/material/radio';
-import { MtTitelComponent } from './mt-titel/mt-titel.component';
-import { MtAdresseComponent } from './mt-adresse/mt-adresse.component';
-import { MtYesnopanelComponent } from './mt-yesnopanel/mt-yesnopanel.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { MtYesnopanelComponent } from './mt-yesnopanel/mt-yesnopanel.component';
     MatCheckboxModule,
     MatSlideToggleModule,
     MatRadioModule,
+    MatExpansionModule,
     FormsModule
   ],
   providers: [],

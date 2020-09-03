@@ -11,6 +11,12 @@ export class MtInputComponent implements OnInit {
   @Input() width: string;
   @Input() prefix: string;
   @Input() suffix: string;
+  @Input() appearance: string = 'outline';
+  @Input() font: string = "12px";
+  @Input() hint: string;
+  @Input() disabled: boolean = false;
+
+
 
   constructor() { }
 

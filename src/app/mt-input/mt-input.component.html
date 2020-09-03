@@ -1,7 +1,8 @@
-<div style="font-size: 12px">
-    <mat-form-field appearance="outline" class="mt-input" style="width: {{width}};">
+<span style="font-size: {{font}}">
+    <mat-form-field appearance="{{appearance}}" class="mt-input" style="width: {{width}};">
         <mat-label>{{label}}</mat-label>
-        <input matInput>
+        <input matInput [disabled]="disabled">
         <span matSuffix class="suffix">{{suffix}}</span>
-    </mat-form-field>
-</div>
+<mat-hint>{{hint}}</mat-hint>
+</mat-form-field>
+</span>

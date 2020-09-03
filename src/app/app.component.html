@@ -1,35 +1,38 @@
 <form class="mat-app-background">
+
     <p class="titel mat-display-1">Technisches Anschlussgesuch (TAG)</p>
-    <app-mt-card label="Ort der Installation"></app-mt-card>
+    <app-mt-card label="Ort der Installation"> </app-mt-card>
+
     <div class="newrow">
-        <app-mt-input label="Standort" width="500px" suffix="H"></app-mt-input>
-        <app-mt-input label="Nr" width="100px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="Standort" width="500px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="Nr" width="100px" hint="Standort Nr"></app-mt-input>
+    </div>
+
+
+    <div class="newrow">
+        <app-mt-input appearance={{appearance}} font={{font}} label="PLZ" width="100px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="Ort" width="400px"></app-mt-input>
     </div>
 
     <div class="newrow">
-        <app-mt-input label="PLZ" width="100px"></app-mt-input>
-        <app-mt-input label="Ort" width="400px"></app-mt-input>
-    </div>
-
-    <div class="newrow">
-        <app-mt-input label="Gemeinde" width="500px"></app-mt-input>
-        <app-mt-input label="" width="100px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="Gemeinde" width="500px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="" width="100px" hint="Gemeinde Zusatz"></app-mt-input>
     </div>
 
     <div class="newrow">
         <app-mt-checkbox label="neu"></app-mt-checkbox>
         <app-mt-checkbox label="bestehend"></app-mt-checkbox>
         <app-mt-checkbox label=""></app-mt-checkbox>
-        <app-mt-input label="" width="200px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="" width="200px"></app-mt-input>
     </div>
 
 
     <app-mt-card label="Anlage / Gebäudeteil"></app-mt-card>
     <div class="newrow">
-        <app-mt-input label="Zähler" width="600px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="Zähler" width="600px"></app-mt-input>
     </div>
     <div class="newrow">
-        <app-mt-input label="Netzanschluss (HAK)" width="200px"></app-mt-input>
+        <app-mt-input appearance={{appearance}} font={{font}} label="Netzanschluss (HAK)" width="200px" suffix="A"></app-mt-input>
     </div>
     <div class="newrow">
         <app-mt-checkbox label="neu"></app-mt-checkbox>
@@ -40,11 +43,11 @@
     <!-- <app-mt-switch label="dada"></app-mt-switch> -->
     <!-- <app-mt-radio [items]='["1", "2", "3"]'></app-mt-radio> -->
     <app-mt-titel label="Einreichendes Unternehmen"></app-mt-titel>
-    <app-mt-adresse></app-mt-adresse>
+    <app-mt-adresse font={{font}}></app-mt-adresse>
     <app-mt-titel label="Sachbearbeiter"></app-mt-titel>
-    <app-mt-adresse></app-mt-adresse>
+    <app-mt-adresse font={{font}}></app-mt-adresse>
     <app-mt-titel label="Eigentümer (Betriebsinhaber)"></app-mt-titel>
-    <app-mt-adresse></app-mt-adresse>
+    <app-mt-adresse font={{font}}></app-mt-adresse>
     <app-mt-radio label="Sprache" [items]='["De", "Fr", "It"]'></app-mt-radio>
     <app-mt-card label="Termine"></app-mt-card>
     <div class="newrow">
