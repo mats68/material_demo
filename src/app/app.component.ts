@@ -10,7 +10,7 @@ export class AppComponent {
   font: string = '12px';
   appearance: string = 'outline'; //standard, fill, outline, legacy
   disabled: boolean = false;
-  hint: boolean;
+  hint: false;
 
 
 }

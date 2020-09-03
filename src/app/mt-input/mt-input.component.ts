@@ -15,6 +15,7 @@ export class MtInputComponent implements OnInit {
   @Input() font: string = "12px";
   @Input() hint: string;
   @Input() disabled: boolean = false;
+  @Input() multiline: boolean = false;
 
 
 

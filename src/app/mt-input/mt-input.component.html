@@ -1,7 +1,8 @@
 <span style="font-size: {{font}}">
     <mat-form-field appearance="{{appearance}}" class="mt-input" style="width: {{width}};">
         <mat-label>{{label}}</mat-label>
-        <input matInput [disabled]="disabled">
+        <input *ngIf='!multiline' matInput [disabled]="disabled">
+        <textarea *ngIf='multiline' matInput [disabled]="disabled"></textarea>
         <span matSuffix class="suffix">{{suffix}}</span>
 <mat-hint>{{hint}}</mat-hint>
 </mat-form-field>

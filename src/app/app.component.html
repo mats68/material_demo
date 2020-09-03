@@ -14,15 +14,6 @@
 </mat-radio-group>
 
 
-<!-- <mat-form-field appearance="fill">
-    <mat-label>Appearance</mat-label>
-    <select required [(ngModel)]='appearance'>
-      <option value="standard">standard</option>
-      <option value="fill">fill</option>
-      <option value="outline">outline</option>
-      <option value="legacy">legacy</option>
-    </select>
-</mat-form-field> -->
 <div></div>
 <mat-checkbox [(ngModel)]="disabled">Disabled</mat-checkbox>
 
@@ -90,6 +81,10 @@
     <app-mt-yesnopanel label="Anlagen mit Netzrückwirkungen"></app-mt-yesnopanel>
     <app-mt-yesnopanel label="Energiespeicher"></app-mt-yesnopanel>
     <app-mt-yesnopanel label="Ladestationen für Elektrofahrzeuge"></app-mt-yesnopanel>
+    <app-mt-card label="Notiz"></app-mt-card>
+    <div class="newrow">
+        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Bemerkungen" width="600px" multiline="true"></app-mt-input>
+    </div>
 
 
 </form>
