@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mt-checkbox',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mt-checkbox.component.css']
 })
 export class MtCheckboxComponent implements OnInit {
+  @Input() label: string;
+
 
   constructor() { }
 
