@@ -12,6 +12,7 @@ import { Component, OnInit, Input } from '@angular/core';
 // }
 
 export class MtRadioComponent implements OnInit {
+  @Input() label: string;
   @Input() items: string[];
   
   constructor() { }
