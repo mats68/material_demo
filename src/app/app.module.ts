@@ -10,20 +10,25 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MtCheckboxComponent } from './mt-checkbox/mt-checkbox.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MtSwitchComponent } from './mt-switch/mt-switch.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MtInputComponent,
     MtCardComponent,
-    MtCheckboxComponent
+    MtCheckboxComponent,
+    MtSwitchComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
