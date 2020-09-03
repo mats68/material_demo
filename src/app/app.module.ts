@@ -8,18 +8,22 @@ import { MtCardComponent } from './mt-card/mt-card.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MtCheckboxComponent } from './mt-checkbox/mt-checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MtInputComponent,
-    MtCardComponent
+    MtCardComponent,
+    MtCheckboxComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
