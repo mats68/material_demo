@@ -3,6 +3,17 @@
     <input matInput [(ngModel)]='font' appearance="fill">
 </mat-form-field>
 
+<div></div>
+<span class="titel-abs">
+    Appearance
+</span>
+<mat-radio-group [(ngModel)]='appearance'>
+    <mat-radio-button value='fill' class="titel-abs">fill</mat-radio-button>
+    <mat-radio-button value='outline' class="titel-abs">outline</mat-radio-button>
+    <mat-radio-button value='standard' class="titel-abs">standard</mat-radio-button>
+</mat-radio-group>
+
+
 <!-- <mat-form-field appearance="fill">
     <mat-label>Appearance</mat-label>
     <select required [(ngModel)]='appearance'>
