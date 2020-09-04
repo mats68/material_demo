@@ -5,6 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './mt-input.component.html',
   styleUrls: ['./mt-input.component.css']
 })
+
 export class MtInputComponent implements OnInit {
 
   @Input() label: string;
