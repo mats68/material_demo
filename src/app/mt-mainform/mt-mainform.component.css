@@ -14,3 +14,12 @@
 .titel-abs {
     margin-right: 20px;
 }
+
+.settings {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 20px;
+    border: 1px solid black;
+}

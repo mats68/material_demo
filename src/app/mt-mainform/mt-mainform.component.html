@@ -1,28 +1,36 @@
-<mat-form-field id="top">
-    <mat-label>Font: </mat-label>
-    <input matInput [(ngModel)]='font' appearance="fill">
-</mat-form-field>
+<div class="settings">
+    <p>Settings</p>
+    <mat-form-field id="top">
+        <mat-label>Font: </mat-label>
+        <input matInput [(ngModel)]='font' appearance="fill">
+    </mat-form-field>
 
-<div></div>
-<span class="titel-abs">
+    <div></div>
+    <span class="titel-abs">
     Appearance
 </span>
-<mat-radio-group [(ngModel)]='appearance'>
-    <mat-radio-button value='fill' class="titel-abs">fill</mat-radio-button>
-    <mat-radio-button value='outline' class="titel-abs">outline</mat-radio-button>
-    <mat-radio-button value='standard' class="titel-abs">standard</mat-radio-button>
-</mat-radio-group>
+    <mat-radio-group [(ngModel)]='appearance'>
+        <mat-radio-button value='fill' class="titel-abs">fill</mat-radio-button>
+        <mat-radio-button value='outline' class="titel-abs">outline</mat-radio-button>
+        <mat-radio-button value='standard' class="titel-abs">standard</mat-radio-button>
+    </mat-radio-group>
+    <div></div>
+    <mat-checkbox [(ngModel)]="multi">Multi-Expandable</mat-checkbox>
+    <div class="example-action-buttons" *ngIf='multi'>
+        <button mat-button (click)="accordion.openAll()">Expand All</button>
+        <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+    </div>
 
-
-<div></div>
-<mat-checkbox [(ngModel)]="disabled">Disabled</mat-checkbox>
+    <div></div>
+    <mat-checkbox [(ngModel)]="disabled">Disabled</mat-checkbox>
+</div>
 
 
 
 
 <form class="mat-app-background">
     <p class="titel mat-display-1">Technisches Anschlussgesuch (TAG)</p>
-    <mat-accordion>
+    <mat-accordion multi={{multi}}>
 
         <app-mt-exp label="Ort der Installation">
             <div class="newrow">

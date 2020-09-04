@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-mt-mainform',
@@ -10,7 +11,9 @@ export class MtMainformComponent implements OnInit {
   font: string = '12px';
   appearance: string = 'outline'; //standard, fill, outline, legacy
   disabled: boolean = false;
+  multi: boolean = false;
   hint: false;
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
   constructor() { }
 
