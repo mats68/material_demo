@@ -1,4 +1,4 @@
-<mat-form-field>
+<mat-form-field id="top">
     <mat-label>Font: </mat-label>
     <input matInput [(ngModel)]='font' appearance="fill">
 </mat-form-field>
@@ -60,7 +60,7 @@
         <app-mt-checkbox label="neu"></app-mt-checkbox>
         <app-mt-checkbox label="bestehend"></app-mt-checkbox>
     </div>
-    <app-mt-card label="Adressen / Geschäftspartner"></app-mt-card>
+    <app-mt-card id="adressen" label="Adressen / Geschäftspartner"></app-mt-card>
 
     <!-- <app-mt-switch label="dada"></app-mt-switch> -->
     <!-- <app-mt-radio [items]='["1", "2", "3"]'></app-mt-radio> -->
@@ -71,7 +71,7 @@
     <app-mt-titel label="Eigentümer (Betriebsinhaber)"></app-mt-titel>
     <app-mt-adresse appearance={{appearance}} font={{font}}></app-mt-adresse>
     <app-mt-radio label="Sprache" [items]='["De", "Fr", "It"]'></app-mt-radio>
-    <app-mt-card label="Termine"></app-mt-card>
+    <app-mt-card id="termine" label="Termine"></app-mt-card>
     <div class="newrow">
         <h3>Voraussichtliche Inbetriebnahme</h3>
     </div>
