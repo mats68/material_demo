@@ -21,70 +21,76 @@
 
 
 <form class="mat-app-background">
-
     <p class="titel mat-display-1">Technisches Anschlussgesuch (TAG)</p>
-    <app-mt-card label="Ort der Installation"> </app-mt-card>
+    <mat-accordion>
 
-    <div class="newrow">
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Standort" width="500px"></app-mt-input>
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Nr" width="100px" hint="Standort Nr"></app-mt-input>
-    </div>
-
-
-    <div class="newrow">
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="PLZ" width="100px"></app-mt-input>
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Ort" width="400px"></app-mt-input>
-    </div>
-
-    <div class="newrow">
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Gemeinde" width="500px"></app-mt-input>
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="" width="100px" hint="Gemeinde Zusatz"></app-mt-input>
-    </div>
-
-    <div class="newrow">
-        <app-mt-checkbox label="neu"></app-mt-checkbox>
-        <app-mt-checkbox label="bestehend"></app-mt-checkbox>
-        <app-mt-checkbox label=""></app-mt-checkbox>
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="" width="200px"></app-mt-input>
-    </div>
+        <app-mt-exp label="Ort der Installation">
+            <div class="newrow">
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Standort" width="500px"></app-mt-input>
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Nr" width="100px" hint="Standort Nr"></app-mt-input>
+            </div>
 
 
-    <app-mt-card label="Anlage / Gebäudeteil"></app-mt-card>
-    <div class="newrow">
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Zähler" width="600px"></app-mt-input>
-    </div>
-    <div class="newrow">
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Netzanschluss (HAK)" width="200px" suffix="A"></app-mt-input>
-    </div>
-    <div class="newrow">
-        <app-mt-checkbox label="neu"></app-mt-checkbox>
-        <app-mt-checkbox label="bestehend"></app-mt-checkbox>
-    </div>
-    <app-mt-card id="adressen" label="Adressen / Geschäftspartner"></app-mt-card>
+            <div class="newrow">
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="PLZ" width="100px"></app-mt-input>
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Ort" width="400px"></app-mt-input>
+            </div>
 
-    <!-- <app-mt-switch label="dada"></app-mt-switch> -->
-    <!-- <app-mt-radio [items]='["1", "2", "3"]'></app-mt-radio> -->
-    <app-mt-titel label="Einreichendes Unternehmen"></app-mt-titel>
-    <app-mt-adresse appearance={{appearance}} font={{font}}></app-mt-adresse>
-    <app-mt-titel label="Sachbearbeiter"></app-mt-titel>
-    <app-mt-adresse appearance={{appearance}} font={{font}}></app-mt-adresse>
-    <app-mt-titel label="Eigentümer (Betriebsinhaber)"></app-mt-titel>
-    <app-mt-adresse appearance={{appearance}} font={{font}}></app-mt-adresse>
-    <app-mt-radio label="Sprache" [items]='["De", "Fr", "It"]'></app-mt-radio>
-    <app-mt-card id="termine" label="Termine"></app-mt-card>
-    <div class="newrow">
-        <h3>Voraussichtliche Inbetriebnahme</h3>
-    </div>
-    <app-mt-card label="Geräte"></app-mt-card>
-    <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Elektrische Wärme / Wärmepumpe (WP)"></app-mt-yesnopanel>
-    <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Energieerzeugungsanlagen (EEA)"></app-mt-yesnopanel>
-    <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Anlagen mit Netzrückwirkungen"></app-mt-yesnopanel>
-    <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Energiespeicher"></app-mt-yesnopanel>
-    <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Ladestationen für Elektrofahrzeuge"></app-mt-yesnopanel>
-    <app-mt-card label="Notiz"></app-mt-card>
-    <div class="newrow">
-        <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Bemerkungen" width="600px" multiline="true"></app-mt-input>
-    </div>
+            <div class="newrow">
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Gemeinde" width="500px"></app-mt-input>
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="" width="100px" hint="Gemeinde Zusatz"></app-mt-input>
+            </div>
 
+
+            <div class="newrow">
+                <app-mt-checkbox label="neu"></app-mt-checkbox>
+                <app-mt-checkbox label="bestehend"></app-mt-checkbox>
+                <app-mt-checkbox label=""></app-mt-checkbox>
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="" width="200px"></app-mt-input>
+            </div>
+        </app-mt-exp>
+
+        <app-mt-exp label="Anlage / Gebäudeteil">
+            <div class="newrow">
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Zähler" width="600px"></app-mt-input>
+            </div>
+            <div class="newrow">
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Netzanschluss (HAK)" width="200px" suffix="A"></app-mt-input>
+            </div>
+            <div class="newrow">
+                <app-mt-checkbox label="neu"></app-mt-checkbox>
+                <app-mt-checkbox label="bestehend"></app-mt-checkbox>
+            </div>
+        </app-mt-exp>
+        <app-mt-exp id="adressen" label="Adressen / Geschäftspartner">
+
+            <!-- <app-mt-switch label="dada"></app-mt-switch> -->
+            <!-- <app-mt-radio [items]='["1", "2", "3"]'></app-mt-radio> -->
+            <app-mt-titel label="Einreichendes Unternehmen"></app-mt-titel>
+            <app-mt-adresse appearance={{appearance}} font={{font}}></app-mt-adresse>
+            <app-mt-titel label="Sachbearbeiter"></app-mt-titel>
+            <app-mt-adresse appearance={{appearance}} font={{font}}></app-mt-adresse>
+            <app-mt-titel label="Eigentümer (Betriebsinhaber)"></app-mt-titel>
+            <app-mt-adresse appearance={{appearance}} font={{font}}></app-mt-adresse>
+            <app-mt-radio label="Sprache" [items]='["De", "Fr", "It"]'></app-mt-radio>
+        </app-mt-exp>
+        <app-mt-exp id="termine" label="Termine">
+            <div class="newrow">
+                <h3>Voraussichtliche Inbetriebnahme</h3>
+            </div>
+        </app-mt-exp>
+        <app-mt-exp label="Geräte">
+            <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Elektrische Wärme / Wärmepumpe (WP)"></app-mt-yesnopanel>
+            <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Energieerzeugungsanlagen (EEA)"></app-mt-yesnopanel>
+            <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Anlagen mit Netzrückwirkungen"></app-mt-yesnopanel>
+            <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Energiespeicher"></app-mt-yesnopanel>
+            <app-mt-yesnopanel appearance={{appearance}} font={{font}} label="Ladestationen für Elektrofahrzeuge"></app-mt-yesnopanel>
+        </app-mt-exp>
+        <app-mt-exp label="Notiz">
+            <div class="newrow">
+                <app-mt-input disabled={{disabled}} appearance={{appearance}} font={{font}} label="Bemerkungen" width="600px" multiline="true"></app-mt-input>
+            </div>
+        </app-mt-exp>
+    </mat-accordion>
 
 </form>

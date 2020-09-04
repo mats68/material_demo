@@ -60,6 +60,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { MtMainformComponent } from './mt-mainform/mt-mainform.component';
+import { MtExpComponent } from './mt-exp/mt-exp.component';
 
 
 
@@ -77,7 +78,8 @@ import { MtMainformComponent } from './mt-mainform/mt-mainform.component';
     MtYesnopanelComponent,
     MtTechformComponent,
     MtNavComponent,
-    MtMainformComponent
+    MtMainformComponent,
+    MtExpComponent
   ],
   imports: [
     BrowserModule,
