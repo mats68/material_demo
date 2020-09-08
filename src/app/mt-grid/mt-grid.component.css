@@ -1,0 +1,14 @@
+.panel {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titel {
+    font-weight: 700;
+    font-size: large;
+}
+
+.subtitel {
+    font-weight: 400;
+    font-size: medium;
+}

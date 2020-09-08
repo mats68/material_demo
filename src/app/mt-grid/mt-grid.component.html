@@ -1,0 +1,11 @@
+<mat-accordion>
+    <mat-expansion-panel (opened)="opened()" class="panel" hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <div class="titel">{{titel}}</div>
+                <div class="subtitel">{{subtitel}}</div>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-content></ng-content>
+    </mat-expansion-panel>
+</mat-accordion>

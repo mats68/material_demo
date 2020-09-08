@@ -15,6 +15,9 @@ import { MtAdresseComponent } from './mt-adresse/mt-adresse.component';
 import { MtYesnopanelComponent } from './mt-yesnopanel/mt-yesnopanel.component';
 import { MtTechformComponent } from './mt-techform/mt-techform.component';
 import { MtNavComponent } from './mt-nav/mt-nav.component';
+import { MtMainformComponent } from './mt-mainform/mt-mainform.component';
+import { MtExpComponent } from './mt-exp/mt-exp.component';
+import { MtGridComponent } from './mt-grid/mt-grid.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
@@ -59,8 +62,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
-import { MtMainformComponent } from './mt-mainform/mt-mainform.component';
-import { MtExpComponent } from './mt-exp/mt-exp.component';
 
 
 
@@ -79,7 +80,8 @@ import { MtExpComponent } from './mt-exp/mt-exp.component';
     MtTechformComponent,
     MtNavComponent,
     MtMainformComponent,
-    MtExpComponent
+    MtExpComponent,
+    MtGridComponent
   ],
   imports: [
     BrowserModule,
