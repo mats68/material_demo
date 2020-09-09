@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { IGridDefinition } from "../../api/grid";
 
 @Component({
   selector: 'app-mt-grid',
@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./mt-grid.component.css']
 })
 export class MtGridComponent implements OnInit {
+  @Input() grid: IGridDefinition;
+
   @Input() titel: string;
   @Input() subtitel: string;
 
@@ -16,9 +18,8 @@ export class MtGridComponent implements OnInit {
   }
 
   opened(): void {
-    alert('expand');
-    console.log('Thaler')
-
+    
+    //alert('expand');
   }
 
 }

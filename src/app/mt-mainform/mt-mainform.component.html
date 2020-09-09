@@ -33,7 +33,7 @@
     <mat-accordion multi={{multi}}>
 
         <app-mt-exp label="Messungen Grid">
-            <app-mt-grid titel="Messungen">
+            <app-mt-grid *ngIf="griddef" titel="Messungen" [grid]="griddef">
 
             </app-mt-grid>
 

@@ -1,9 +1,8 @@
-<mat-accordion>
-    <mat-expansion-panel (opened)="opened()" class="panel" hideToggle>
+<mat-accordion *ngIf='grid'>
+    <mat-expansion-panel *ngFor="let item of grid.records" (opened)="opened()" class="panel" hideToggle>
         <mat-expansion-panel-header>
             <mat-panel-title>
-                <div class="titel">{{titel}}</div>
-                <div class="subtitel">{{subtitel}}</div>
+                <div class="titel">{{item.summary}}</div>
             </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-content></ng-content>
